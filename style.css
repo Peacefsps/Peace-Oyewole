@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(10, 25, 47);
+    padding: 0 50px;
+}
+a {
+    text-decoration: none;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+.side-nav {
+    display: none;
+}
+.logo > img {
+    width: 60px;
+    height: 60px;
+}
+@keyframes slideLeft {
+    0% {
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    100% {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+.responsive-logo {
+    display: none;
+}
+.right-nav > a {
+    margin-right: 20px;
+    font-family: Roboto Mono;
+    font-size: 13px;
+    color: rgb(204, 214, 246);
+    animation-name: slideLeft;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+.underline {
+    position: relative;
+}
+.underline::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    right: 0;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.5);
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+    margin-top: -8px;
+}
+.underline:hover::after {
+    width: 100%;
+    left: 0;
+}
+.right-nav > a span {
+    color: rgb(100, 255, 218);
+    margin-right: 8px;
+}
+.right-nav button {
+    padding: 12px 16px;
+    background-color: rgb(10, 25, 47);
+    border: 1px solid rgb(100, 255, 218);
+    font-size: 13px;
+    font-family: Roboto Mono;
+    border-radius: 4px;
+    color: rgb(100, 255, 218);
+    cursor: pointer;
+}
+.right-nav button:hover {
+    outline: none;
+    background-color: rgba(100, 255, 218, 0.043);
+}
+.sidenav {
+    display: none;
+}
+.container {
+    display: flex;
+    padding-top: 100px;
+}
+@-webkit-keyframes slideUpDown {
+    0% {
+        margin-top: -30px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
+@keyframes slideUpDown{
+    0% {
+        margin-top: -30px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    animation-name: slideUpDown;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+}
+.icons a {
+    color: rgb(168, 178, 209);
+    font-size: 20px;
+    padding: 10px;
+}
+@-webkit-keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+.icons a:hover {
+    color: rgb(100, 255, 218);
+    animation: hithere 1s ease infinite;
+}
+.main-section {
+    padding-left: 100px;
+}
+.intro {
+    /* animation-name: slideRight;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-timing-function: ease-in-out; */
+    position: relative;
+}
+/* @keyframes slideRight {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 150px;
+    }
+} */
+.intro > h1 {
+    color: rgb(100, 255, 218);
+    margin-bottom: 12px;
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-weight: 400;
+}
+.intro h2, h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.intro > h2 {
+    color: rgb(204, 214, 246);
+    font-size: 80px;
+}
+.intro > h3 {
+    color: rgb(136, 146, 176);
+    font-size: 80px;
+    line-height: 72px;
+}
+.intro > p {
+    /* width: 450px; */
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(136, 146, 176);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.about {
+    padding: 100px 0 100px 0;
+    position: relative;
+}
+.about > h2 {
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about h2 > span {
+    color: rgb(100, 255, 218);
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto Mono;
+}
+.about > h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 122px;
+    left: 190px;
+    width: 300px;
+    height: 1px;
+    background-color: rgb(35, 53, 84);
+}
+.about > p {
+    color: rgb(136, 146, 176);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+    margin-bottom: 15px;
+    width: 480px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.picture-box {
+    position: relative;
+    border: 2px solid rgb(100, 255, 218);
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+.box-one {
+    position: absolute;
+    border: 2px solid rgb(100, 255, 218);
+    width: 250px;
+    height: 250px;
+    top: 30px;
+    left: 50px;
+    border-radius: 8px;
+}
+.fa-hand-point-right {
+    color: rgb(100, 255, 218);
+    margin-right: 18px;
+}
+.work {
+    padding-bottom: 100px;
+    position: relative;
+    margin: 0 62px 0 62px;
+}
+.work > h2 {
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.work h2 > span {
+    color: rgb(100, 255, 218);
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto Mono;
+}
+.work > h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 21px;
+    left: 320px;
+    width: 300px;
+    height: 1px;
+    background-color: rgb(35, 53, 84);
+}
+.paf {
+    display: flex;
+    padding-left: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.paf::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 88px;
+    border-left: 2px solid rgb(136, 146, 176);
+    left: 60px;
+    top: 79px;
+    z-index: -1;
+}
+.paf-link > button {
+   color: rgb(136, 146, 176);
+   font-size: 15px;
+   font-family: Roboto Mono;
+   border: none;
+   background: none;
+   cursor: pointer;
+   margin-right: 20px;
+   display: block;
+   padding: 12px 20px;
+   width: 100px;
+   text-align: left;
+}
+.paf-link > button:hover {
+    background-color: rgba(100, 255, 218, 0.043);
+    color: rgb(100, 255, 218);
+    z-index: 1;
+}
+.paf-link .active-button {
+    color: rgb(100, 255, 218);
+    border-left: 2px solid rgb(100, 255, 218);
+}
+.paf-role {
+    display: block;
+    width: 480px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 30px;
+}
+.paf-role > p:first-child{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(204, 214, 246);
+    margin-bottom: 8px;
+    line-height: 24px;
+}
+/* put animation effect to underline paf line when hovered on */
+.paf-role a {
+    color: rgb(100, 255, 218);
+}
+.paf-role > p:nth-child(2) {
+    font-family: Roboto Mono;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: rgb(168, 178, 209)
+}
+.paf-point > p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(136, 146, 176);
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+.paf-point p::before {
+    content: "▹";
+    color: rgb(100, 255, 218);
+    font-size: 22px;
+    position: absolute;
+    left: 0px;
+}
+.upwork {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+    padding-left: 60px;
+}
+#upwork-link > button {
+    color: rgb(100, 255, 218);
+    font-size: 15px;
+    font-family: Roboto Mono;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.upwork-role {
+    display: none;
+    width: 480px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 30px;
+}
+.upwork-role > p:first-child{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(204, 214, 246);
+    margin-bottom: 8px;
+    line-height: 24px;
+}
+.upwork-role a {
+    color: rgb(100, 255, 218);
+}
+.upwork-role > p:nth-child(2) {
+    font-family: Roboto Mono;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: rgb(168, 178, 209)
+}
+.upwork-point > p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(136, 146, 176);
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+.upwork-point p::before {
+    content: "▹";
+    color: rgb(100, 255, 218);
+    font-size: 22px;
+    position: absolute;
+    left: 0px;
+}
+.built {
+    padding-bottom: 100px;
+    padding-right: 100px;
+    position: relative;
+}
+.built > h2 {
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.built h2 > span {
+    color: rgb(100, 255, 218);
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto Mono;
+}
+.kala-box {
+    display: flex;
+    margin-bottom: 100px;
+    position: relative;
+}
+.kala-one > img {
+    width: 500px;
+    height: 250px;
+    z-index: 3;
+    border-radius: 4px;
+}
+.kala-pro {
+    text-align: right;
+    position: absolute;
+    right: 18px;
+}
+.kala-pro > p {
+    color: rgb(100, 255, 218);
+    margin: 10px 0 10px 0;
+    font-size: 13px;
+    font-family: Roboto Mono;
+    line-height: 18px;
+}
+.kala-pro  h3 > a {
+    color: rgb(204, 214, 246);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+}
+.kala-use {
+    background-color: rgb(17, 34, 64);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    z-index: 2;
+    margin: 18px 0 18px 0;
+    width: 600px;
+}
+.kala-use > p {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(168, 178, 209);
+    text-align: justify;
+}
+.kala-pro > a {
+    color: rgb(204, 214, 246);
+    font-size: 20px;
+}
+.kala-pro .fa-arrow-up-right-from-square {
+    font-size: 18px;
+    margin-right: 8px;
+}
+.bumpa-box {
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+}
+.bumpa-pro > p {
+    color: rgb(100, 255, 218);
+    margin: 10px 0 10px 0;
+    font-size: 13px;
+    font-family: Roboto Mono;
+    line-height: 18px;
+}
+.bumpa-pro  h3 > a {
+    color: rgb(204, 214, 246);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+}
+.bumpa-use {
+    background-color: rgb(17, 34, 64);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    z-index: 1;
+    margin: 18px 0 18px 0;
+    width: 600px;
+}
+.bumpa-use > p {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(168, 178, 209);
+    text-align: justify;
+}
+.bumpa-pro > a {
+    color: rgb(204, 214, 246);
+    font-size: 20px;
+}
+.bumpa-pro .fa-arrow-up-right-from-square {
+    font-size: 18px;
+    margin-left: 8px;
+}
+.bumpa-one > img {
+    width: 500px;
+    height: 250px;
+    z-index: -1;
+    border-radius: 8px;
+    border: 2px solid white;
+    position: absolute;
+    right: 20px;
+}
+.others {
+    padding: 100px 0;
+}
+.others > h2 {
+    text-align: center;
+    color: rgb(204, 214, 246);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    margin-bottom: 55px;
+}
+.others-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.others-info {
+    padding: 32px 28px;
+    width: 300px;
+    text-align: justify;
+    background-color: rgb(17, 34, 64);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+.others-info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.fa-folder {
+    color: rgb(100, 255, 218);
+    font-size: 28px;
+}
+.fa-arrow-up-right-from-square {
+    color: rgb(204, 214, 246);
+    font-size: 14px;
+}
+.others-info > h3 {
+    color: rgb(100, 255, 218);
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.others-info > p {
+    color: rgb(168, 178, 209);
+    font-size: 17px;
+    line-height: 23px;
+}
+.next {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.next > h2 {
+    color: rgb(204, 214, 246);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.next h2 > span {
+    color: rgb(100, 255, 218);
+    margin-right: 10px;
+    font-family: Roboto Mono;
+}
+.next > h1 {
+    color: rgb(204, 214, 246);
+    margin-bottom: 10px;
+    font-size: 52px;
+    line-height: 56px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.next > p {
+    color: rgb(136, 146, 176);
+    line-height: 26px;
+    font-size: 20px;
+    width: 400px;
+    display: block;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.next > a button {
+    border: 2px solid rgb(100, 255, 218);
+    padding: 20px 28px;
+    margin-top: 50px;
+    color: rgb(100, 255, 218);
+    background-color: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.icons-below {
+    display: none;
+}
+.footer {
+    text-align: center;
+}
+.footer > a {
+    color: rgb(168, 178, 209);
+    font-size: 12px;
+    padding: 20px;
+    font-family: Roboto Mono;
+}
+.footer a:hover {
+    color:rgb(100, 255, 218);
+}
+.email-contact {
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    position: fixed;
+    /* overflow-x: hidden; */
+    right: -180px;
+}
+.email-contact > a {
+    color: rgb(168, 178, 209);
+    padding: 10px;
+    font-size: 16px;
+    font-family: Roboto Mono;
+}

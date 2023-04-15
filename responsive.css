@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+@media screen and (width: 768px) {
+    body {
+        padding: 0 50px;
+    }
+    .right-nav {
+        display: none;
+    }
+    .side-nav {
+        display: block;
+    }
+    .side-nav > button {
+        background-color: rgb(10, 25, 47);
+        border: none;
+        color: rgb(100, 255, 218);
+        font-size: 38px;
+    }
+    .side-nav > button:hover {
+        color: rgba(100, 255, 218, 0.4)
+    }
+    .hidden-nav {
+        width: 0;
+        z-index: 1;
+        background-color: rgb(10, 25, 47);
+        transition: 0.6s;
+        height: 100%;
+        padding: 30px 0;
+        position: fixed;
+        top: 0;
+        right: 0; 
+        overflow: hidden;
+    }
+    .hidden-nav > a {
+        text-decoration: none;
+        text-align: center;
+        margin: 20px;
+        transition: 0.5s;
+    }
+    .hidden-nav p:first-of-type {
+        color: rgb(100, 255, 218);
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-family: Roboto Mono;
+    }
+    .hidden-nav p:nth-child(2) {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 3px 20px 20px 20px;
+        color: rgb(204, 214, 246);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .hidden-nav > a button {
+        padding: 12px 16px;
+        background-color: rgb(10, 25, 47);
+        border: 1px solid rgb(100, 255, 218);
+        font-size: 13px;
+        font-family: Roboto Mono;
+        border-radius: 4px;
+        color: rgb(100, 255, 218);
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+    }
+    .close-sidenav {
+        font-size: 38px;
+        top: 0;
+        padding-top: 18px;
+        padding-left: 16px;
+        position: absolute;
+        color: rgb(100, 255, 218);
+    }
+    .close-sidenav:hover {
+        color: rgba(100, 255, 218, 0.043)
+    }
+    .icons {
+        display: none;
+    }
+    .email-contact {
+        display: none;
+    }
+    .container {
+        padding-top: 60px;
+    }
+    .main-section {
+        padding-left: 0px;
+    }
+    .intro {
+        animation: none;
+    }
+    @keyframes slideUp {
+        0% {
+            top: 20px
+        }
+        100% {
+            top: 50px;
+        }
+    }
+    .intro > h3 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .intro > p {
+        width: 100%;
+    }
+    .about {
+        padding: 70px 0 70px 0;
+    }
+    .about h2 {
+        font-size: 28px;
+    }
+    .about h2 > span {
+        font-size: 18px;
+    }
+    .about > h2::after {
+        top: 90px;
+        left: 190px;
+        width: 300px;
+    }
+    .about > p {
+        font-size: 18px;
+        line-height: 26px;
+        width: 100%;
+    }
+    .picture-box {
+        display: none;
+    }
+    .work {
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+    .work > h2 {
+        font-size: 28px;
+    }
+    .work h2 > span {
+        font-size: 18px;
+    }
+    .work > h2::after {
+        left: 280px;
+        width: 280px;
+    }
+    .paf {
+        padding-left: 0px;
+    }
+    .paf::before {
+        height: 89px;
+        top: 75px;
+        border-left: 2px solid rgb(136, 146, 176);
+        left: 0;
+    }
+    .paf-link > button {
+        margin-right: 0;
+    }
+    .paf-role {
+        margin-left: 14px;
+        width: 450px;
+    }
+    .paf-role > p:first-child {
+        padding-top: 10px;
+    }
+    .paf-point > p {
+        font-size: 16px;
+    }
+    #upwork-link > button {
+        margin-right: 0;
+    }
+    .upwork-role {
+        margin-left: 14px;
+        width: 450px;
+    }
+    .upwork-role > p:first-child {
+        padding-top: 10px;
+    }
+    .upwork-point > p {
+        font-size: 16px;
+    }
+    .built {
+        padding: 70px 0 70px 0;
+    }
+    .built > h2 {
+        font-size: 28px;
+    }
+    .built h2 > span {
+        font-size: 18px;
+    }
+    .kala-box {
+        padding: 0 30px 0 30px;
+    }
+    .bumpa-box {
+        padding: 0 30px 0 30px;
+    }
+    .others {
+        padding-bottom: 70px;
+    }
+    .icons-below {
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .icons-below > a {
+        color: rgb(168, 178, 209);
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 580px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .logo > img {
+        width: 40px;
+        height: 40px;
+    }
+    .right-nav > a {
+        display: none;
+    }
+    .side-nav {
+        display: block;
+    }
+    .side-nav > button {
+        background-color: rgb(10, 25, 47);
+        border: none;
+        color: rgb(100, 255, 218);
+        font-size: 28px;
+    }
+    .side-nav > button:hover {
+        color: rgba(100, 255, 218, 0.4)
+    }
+    .hidden-nav {
+        width: 0;
+        z-index: 1;
+        background-color: rgb(10, 25, 47);
+        transition: 0.6s;
+        height: 100%;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        right: 0; 
+    }
+    .hidden-nav > a {
+        text-decoration: none;
+        text-align: center;
+        margin: 20px;
+        transition: 0.5s;
+    }
+    .hidden-nav p:first-of-type {
+        color: rgb(100, 255, 218);
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-family: Roboto Mono;
+    }
+    .hidden-nav p:nth-child(2) {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 3px 20px 20px 20px;
+        color: rgb(204, 214, 246);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .hidden-nav > a button {
+        padding: 12px 16px;
+        background-color: rgb(10, 25, 47);
+        border: 1px solid rgb(100, 255, 218);
+        font-size: 13px;
+        font-family: Roboto Mono;
+        border-radius: 4px;
+        color: rgb(100, 255, 218);
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+    }
+    .close-sidenav {
+        font-size: 20px;
+        top: 0;
+        padding-top: 18px;
+        padding-left: 16px;
+        position: absolute;
+        color: rgb(100, 255, 218);
+    }
+    .icons {
+        display: none;
+    }
+    .email-contact {
+        display: none;
+    }
+    .container {
+        padding-top: 60px;
+    }
+    .main-section {
+        padding-left: 0px;
+    }
+    .intro {
+        animation: none;
+    }
+    @keyframes slideUp {
+        0% {
+            top: 20px
+        }
+        100% {
+            top: 50px;
+        }
+    }
+    .intro > h2 {
+        font-size: 40px;
+    }
+    .intro > h3 {
+        font-size: 35px;
+        line-height: 40px;
+        width: 280px;
+    }
+    .intro > p {
+        max-width: 280px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about > h2, .work > h2, .built > h2 {
+        font-size: 20px;
+    }
+    .about h2 > span, .work h2 > span, .built h2 > span {
+        font-size: 14px;
+    }
+    .about {
+        padding: 70px 0 70px 0;
+    }
+    .about h2 > span {
+        font-size: 14px;
+    }
+    .about > h2::after {
+        top: 86px;
+        left: 130px;
+        width: 140px;
+    }
+    .about > p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 280px;
+    }
+    .picture-box {
+        display: none;
+    }
+    .work {
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+    .work > h2::after {
+        top: 14px;
+        left: 200px;
+        width: 90px;
+    }
+    .paf {
+        display: block;
+        padding-left: 0px;
+        text-align: unset;
+    }
+    .paf::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        display: block;
+        top: 64px;
+        left: 0px;
+        width: 280px;
+        height: 2px;
+        background-color: rgb(35, 53, 84);
+    }
+    .paf-link {
+        margin-bottom: 12px;
+    }
+    .paf-link > button {
+        display: inline;
+        padding: 12px;
+        margin-right: 0;
+        width: 140px;
+    }
+    .paf-link .active-button {
+        border-top: 2px solid rgb(100, 255, 218);
+        color: rgb(100, 255, 218);
+        border-left: unset;
+        z-index: 1;
+    }
+    .paf::before {
+        display: none;
+    }
+    .paf-role, .upwork-role > p:first-child {
+        padding-top: 10px;
+    }
+    .paf-point > p {
+        font-size: 16px;
+    }
+    #upwork-link > button {
+        margin-right: 0;
+    }
+    .upwork-point > p {
+        font-size: 16px;
+    }
+    .upwork-role, .paf-role {
+        margin-left: 14px;
+        width: 280px;
+    }
+    .built {
+        padding: 30px 0;
+    }
+    .kala-box {
+        margin-bottom: 60px;
+    }
+    .kala-one > img {
+        width: 280px;
+        height: 290px;
+        opacity: 0.02;
+        outline: 1px solid rgb(100, 255, 218)
+    }
+    .kala-pro {
+        left: 0;
+        text-align: left;
+        padding: 10px;
+    }
+    .kala-use {
+        width: 260px;
+        background-color: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        padding: unset;
+    }
+    .kala-use > p {
+        font-size: 16px;
+    }
+    .bumpa-pro {
+        padding: 10px;
+    }
+    .bumpa-one > img {
+        width: 280px;
+        left: 0;
+        height: 265px;
+        opacity: 0.02
+    }
+    .bumpa-use {
+        width: 260px;
+        background-color: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        padding: unset;
+    }
+    .bumpa-use > p {
+        font-size: 16px;
+    }
+    .bumpa-box {
+        margin-bottom: 50px;
+    }
+    .others {
+        padding: unset;
+    }
+    .others-box {
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+    .others > h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .others-info {
+        width: 260px;
+        margin-left: 0;
+        padding: 10px 8px;
+    }
+    .next {
+        margin-top: 50px;
+    }
+    .next h2 > span {
+        font-size: 18px;
+    }
+    .next > h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .next > p {
+        width: 260px;
+        font-size: 16px;
+    }
+    .next > a button {
+        padding: 12px 14px;
+    }
+    .icons-below {
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .icons-below > a {
+        color: rgb(168, 178, 209);
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+@media screen and (width: 425px) {
+    body {
+        padding: 0 40px;
+    }
+    .about {
+        padding: 70px 40px;
+    }
+    .about >  h2::after {
+        left: 190px;
+    }
+    .next {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (width: 375px) {
+    body {
+        padding: 0 40px;
+    }
+}
+@media screen and (width: 414px) {
+    body {
+        padding: 0 55px;
+    }
+}
+@media screen and (width: 390px) {
+    body {
+        padding: 0 50px;
+    }
+}
+@media screen and (width: 393px) {
+    body {
+        padding: 0 50px;
+    }
+}
+@media screen and (width: 360px) {
+    body {
+        padding: 0 40px;
+    }
+}
+@media screen and (width: 412px) {
+    body {
+        padding: 0 50px;
+    }
+}
+@media screen and (width: 1440px) {
+    body {
+        padding: 60px;
+    }
+}
+@media screen and (width: 820px) {
+    body {
+        padding: 0 50px;
+    }
+    .right-nav {
+        display: none;
+    }
+    .side-nav {
+        display: block;
+    }
+    .side-nav > button {
+        background-color: rgb(10, 25, 47);
+        border: none;
+        color: rgb(100, 255, 218);
+        font-size: 38px;
+    }
+    .side-nav > button:hover {
+        color: rgba(100, 255, 218, 0.4)
+    }
+    .hidden-nav {
+        width: 0;
+        z-index: 1;
+        background-color: rgb(10, 25, 47);
+        transition: 0.6s;
+        height: 100%;
+        padding: 30px 0;
+        position: fixed;
+        top: 0;
+        right: 0; 
+        overflow: hidden;
+    }
+    .hidden-nav > a {
+        text-decoration: none;
+        text-align: center;
+        margin: 20px;
+        transition: 0.5s;
+    }
+    .hidden-nav p:first-of-type {
+        color: rgb(100, 255, 218);
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-family: Roboto Mono;
+    }
+    .hidden-nav p:nth-child(2) {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 3px 20px 20px 20px;
+        color: rgb(204, 214, 246);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .hidden-nav > a button {
+        padding: 12px 16px;
+        background-color: rgb(10, 25, 47);
+        border: 1px solid rgb(100, 255, 218);
+        font-size: 13px;
+        font-family: Roboto Mono;
+        border-radius: 4px;
+        color: rgb(100, 255, 218);
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+    }
+    .close-sidenav {
+        font-size: 38px;
+        top: 0;
+        padding-top: 18px;
+        padding-left: 16px;
+        position: absolute;
+        color: rgb(100, 255, 218);
+    }
+    .close-sidenav:hover {
+        color: rgba(100, 255, 218, 0.043)
+    }
+    .icons {
+        display: none;
+    }
+    .email-contact {
+        display: none;
+    }
+    .container {
+        padding-top: 60px;
+    }
+    .main-section {
+        padding-left: 0px;
+    }
+    .intro {
+        animation: none;
+    }
+    @keyframes slideUp {
+        0% {
+            top: 20px
+        }
+        100% {
+            top: 50px;
+        }
+    }
+    .intro > h3 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .intro > p {
+        width: 100%;
+    }
+    .about {
+        padding: 70px 0 70px 0;
+    }
+    .about h2 {
+        font-size: 28px;
+    }
+    .about h2 > span {
+        font-size: 18px;
+    }
+    .about > h2::after {
+        top: 90px;
+        left: 190px;
+        width: 300px;
+    }
+    .about > p {
+        font-size: 18px;
+        line-height: 26px;
+        width: 100%;
+    }
+    .picture-box {
+        display: none;
+    }
+    .work {
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+    .work > h2 {
+        font-size: 28px;
+    }
+    .work h2 > span {
+        font-size: 18px;
+    }
+    .work > h2::after {
+        left: 280px;
+        width: 280px;
+    }
+    .paf {
+        padding-left: 0px;
+    }
+    .paf::before {
+        height: 89px;
+        top: 75px;
+        border-left: 2px solid rgb(136, 146, 176);
+        left: 0;
+    }
+    .paf-link > button {
+        margin-right: 0;
+    }
+    .paf-role {
+        margin-left: 14px;
+        width: 450px;
+    }
+    .paf-role > p:first-child {
+        padding-top: 10px;
+    }
+    .paf-point > p {
+        font-size: 16px;
+    }
+    #upwork-link > button {
+        margin-right: 0;
+    }
+    .upwork-role {
+        margin-left: 14px;
+        width: 450px;
+    }
+    .upwork-role > p:first-child {
+        padding-top: 10px;
+    }
+    .upwork-point > p {
+        font-size: 16px;
+    }
+    .built {
+        padding: 70px 0 70px 0;
+    }
+    .built > h2 {
+        font-size: 28px;
+    }
+    .built h2 > span {
+        font-size: 18px;
+    }
+    .kala-box {
+        padding: 0 30px 0 30px;
+    }
+    .bumpa-box {
+        padding: 0 30px 0 30px;
+    }
+    .others {
+        padding-bottom: 70px;
+    }
+    .icons-below {
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .icons-below > a {
+        color: rgb(168, 178, 209);
+        font-size: 20px;
+        padding: 10px;
+    }
+}
