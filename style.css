@@ -25,18 +25,18 @@ a {
     width: 60px;
     height: 60px;
 }
-@keyframes slideLeft {
-    0% {
-        margin-left: -10px;
-        margin-top: -10px;
-    }
-    100% {
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-}
 .responsive-logo {
     display: none;
+}
+@keyframes slideLeft {
+    0% {
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+    100% {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
 }
 .right-nav > a {
     margin-right: 20px;
@@ -44,8 +44,8 @@ a {
     font-size: 13px;
     color: rgb(204, 214, 246);
     animation-name: slideLeft;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 .underline {
@@ -95,22 +95,16 @@ a {
     0% {
         margin-top: -30px;
     }
-    50% {
-        margin-top: 0px;
-    }
     100% {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 }
 @keyframes slideUpDown{
     0% {
         margin-top: -30px;
     }
-    50% {
-        margin-top: 0px;
-    }
     100% {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 }
 .icons {
@@ -149,20 +143,20 @@ a {
     padding-left: 100px;
 }
 .intro {
-    /* animation-name: slideRight;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    animation-timing-function: ease-in-out; */
+    animation-name: slideRight;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease-in-out;
     position: relative;
 }
-/* @keyframes slideRight {
+@keyframes slideRight {
     0% {
-        left: 0
+        margin-top: -30px
     }
     100% {
-        left: 150px;
+        margin-top: 0px;
     }
-} */
+}
 .intro > h1 {
     color: rgb(100, 255, 218);
     margin-bottom: 12px;
@@ -308,6 +302,7 @@ a {
    padding: 12px 20px;
    width: 100px;
    text-align: left;
+   /* transition: 0.5s; */
 }
 .paf-link > button:hover {
     background-color: rgba(100, 255, 218, 0.043);
@@ -520,6 +515,9 @@ a {
     font-size: 18px;
     margin-left: 8px;
 }
+.change-icon {
+    display: none;
+}
 .bumpa-one > img {
     width: 500px;
     height: 250px;
@@ -554,20 +552,24 @@ a {
     margin-bottom: 25px;
     margin-left: 30px;
 }
-.others-info > div {
+.others-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 35px;
 }
-.fa-folder {
+.others-icon > a {
+    color: rgb(100, 255, 218);
+    font-size: 28px;
+}
+/* .fa-folder {
     color: rgb(100, 255, 218);
     font-size: 28px;
 }
 .fa-arrow-up-right-from-square {
     color: rgb(204, 214, 246);
     font-size: 14px;
-}
+} */
 .others-info > h3 {
     color: rgb(100, 255, 218);
     margin-bottom: 10px;

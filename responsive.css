@@ -83,17 +83,6 @@
     .main-section {
         padding-left: 0px;
     }
-    .intro {
-        animation: none;
-    }
-    @keyframes slideUp {
-        0% {
-            top: 20px
-        }
-        100% {
-            top: 50px;
-        }
-    }
     .intro > h3 {
         font-size: 50px;
         line-height: 50px;
@@ -200,6 +189,24 @@
         font-size: 20px;
         padding: 10px;
     }
+    @-webkit-keyframes hithere {
+        30% { transform: scale(1.2); }
+        40%, 60% { transform: rotate(-20deg) scale(1.2); }
+        50% { transform: rotate(20deg) scale(1.2); }
+        70% { transform: rotate(0deg) scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      @keyframes hithere {
+        30% { transform: scale(1.2); }
+        40%, 60% { transform: rotate(-20deg) scale(1.2); }
+        50% { transform: rotate(20deg) scale(1.2); }
+        70% { transform: rotate(0deg) scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      .icons-below > a:hover {
+          color: rgb(100, 255, 218);
+          animation: hithere 1s ease infinite;
+      }
 }
 @media screen and (max-width: 580px) {
     .container {
@@ -286,17 +293,6 @@
     }
     .main-section {
         padding-left: 0px;
-    }
-    .intro {
-        animation: none;
-    }
-    @keyframes slideUp {
-        0% {
-            top: 20px
-        }
-        100% {
-            top: 50px;
-        }
     }
     .intro > h2 {
         font-size: 40px;
@@ -404,8 +400,7 @@
     .kala-one > img {
         width: 280px;
         height: 290px;
-        opacity: 0.02;
-        outline: 1px solid rgb(100, 255, 218)
+        opacity: 0.1;
     }
     .kala-pro {
         left: 0;
@@ -429,7 +424,7 @@
         width: 280px;
         left: 0;
         height: 265px;
-        opacity: 0.02
+        opacity: 0.1
     }
     .bumpa-use {
         width: 260px;
@@ -440,6 +435,21 @@
     }
     .bumpa-use > p {
         font-size: 16px;
+    }
+    .bumpa-pro > a {
+        display: none;
+    }
+    .change-icon {
+        display: block;
+    }
+    .change-icon > a {
+        color: rgb(204, 214, 246);
+        font-size: 20px;
+    }
+    .change-icon .fa-arrow-up-right-from-square {
+        font-size: 18px;
+        margin-right: 8px;
+        margin-left: 0;
     }
     .bumpa-box {
         margin-bottom: 50px;
@@ -487,6 +497,24 @@
         font-size: 20px;
         padding: 10px;
     }
+    @-webkit-keyframes hithere {
+        30% { transform: scale(1.2); }
+        40%, 60% { transform: rotate(-20deg) scale(1.2); }
+        50% { transform: rotate(20deg) scale(1.2); }
+        70% { transform: rotate(0deg) scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      @keyframes hithere {
+        30% { transform: scale(1.2); }
+        40%, 60% { transform: rotate(-20deg) scale(1.2); }
+        50% { transform: rotate(20deg) scale(1.2); }
+        70% { transform: rotate(0deg) scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      .icons-below > a:hover {
+          color: rgb(100, 255, 218);
+          animation: hithere 1s ease infinite;
+      }
 }
 @media screen and (width: 425px) {
     .container {
@@ -641,17 +669,6 @@
     .main-section {
         padding-left: 0px;
     }
-    .intro {
-        animation: none;
-    }
-    @keyframes slideUp {
-        0% {
-            top: 20px
-        }
-        100% {
-            top: 50px;
-        }
-    }
     .intro > h3 {
         font-size: 50px;
         line-height: 50px;
@@ -758,4 +775,22 @@
         font-size: 20px;
         padding: 10px;
     }
+    @-webkit-keyframes hithere {
+        30% { transform: scale(1.2); }
+        40%, 60% { transform: rotate(-20deg) scale(1.2); }
+        50% { transform: rotate(20deg) scale(1.2); }
+        70% { transform: rotate(0deg) scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      @keyframes hithere {
+        30% { transform: scale(1.2); }
+        40%, 60% { transform: rotate(-20deg) scale(1.2); }
+        50% { transform: rotate(20deg) scale(1.2); }
+        70% { transform: rotate(0deg) scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      .icons-below > a:hover {
+          color: rgb(100, 255, 218);
+          animation: hithere 1s ease infinite;
+      }
 }
