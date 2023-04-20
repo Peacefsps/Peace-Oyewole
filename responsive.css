@@ -604,6 +604,9 @@
     .container {
         padding: 100px 50px 0 50px;
     }
+    .built > h2::after {
+        left: 360px;
+    }
 }
 @media screen and (width: 820px) {
     .container {
