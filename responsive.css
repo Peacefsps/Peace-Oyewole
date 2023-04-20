@@ -172,7 +172,8 @@
     }
     .built > h2::after {
         top: 90px;
-        right: 60px;
+        left: 300px;
+        width: 250px;
     }
     .kala-box {
         padding: 0 30px 0 30px;
@@ -401,6 +402,7 @@
     .built > h2::after {
         top: 90px;
         right: 60px;
+        width: 0px;
     }
     .kala-box {
         margin-bottom: 60px;
@@ -539,8 +541,8 @@
     }
     .built > h2::after {
         top: 44px;
-        right: 80px;
-        width: 56px;
+        left: 220px;
+        width: 80px;
     }
 }
 @media screen and (width: 375px) {
@@ -549,7 +551,7 @@
     }
     .built > h2::after {
         top: 44px;
-        right: 15px;
+        left: 220px;
         width: 56px;
     }
 }
@@ -572,7 +574,7 @@
 @media screen and (width: 320px) {
     .built > h2::after {
         top: 44px;
-        right: 15px;
+        left: 220px;
         width: 56px;
     }
 }

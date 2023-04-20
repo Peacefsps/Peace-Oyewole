@@ -429,7 +429,7 @@ a {
     position: absolute;
     display: block;
     top: 21px;
-    right: 170px;
+    left: 340px;
     width: 300px;
     height: 1px;
     background-color: rgb(35, 53, 84);
