@@ -325,9 +325,7 @@
         font-size: 14px;
     }
     .about > h2::after {
-        top: 86px;
-        left: 130px;
-        width: 140px;
+        display: none;
     }
     .about > p {
         font-size: 16px;
